@@ -65,6 +65,7 @@ from .resnet import (
     resnet152,
     resnet200,
 )
+from .sam import Sam, SAM
 from .segresnet import SegResNet, SegResNetVAE
 from .segresnet_ds import SegResNetDS
 from .senet import (
