@@ -68,6 +68,7 @@ class SAMImageEncoder():
                 boxes   = box_torch,
                 masks   = None,
             )
+        
         low_res_masks, _ = self.sam_model.mask_decoder(
             image_embeddings    = image_embedding.to(self.device), # (B, 256, 64, 64)
             image_pe            = self.sam_model.prompt_encoder.get_dense_pe(), # (1, 256, 64, 64)
